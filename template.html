@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Subbed Polaris</title>
+		<style>
+			video {
+				width: 800px;
+				height: 600px;
+				background-image: url("jacket.png");
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+			::cue {
+				font-size: 1.25rem;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Winter Polaris</h1>
+		<p>Source code for generator at <a href="https://github.com/K3NN37H/winter-polaris-webvtt">https://github.com/K3NN37H/winter-polaris-webvtt</a></p>
+		<h2>Track 1</h2>
+		<video controls src="./01 - Track 01.mp3">
+			<track default src="data:text/vtt;base64,{{index .TrackSrc 0}}" />
+		</video>
+		<h2>Track 2</h2>
+		<video controls src="./02 - Track 02.mp3">
+			<track default src="data:text/vtt;base64,{{index .TrackSrc 1}}" />
+		</video>
+	</body>
+</html>
